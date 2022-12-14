@@ -12,7 +12,7 @@
                   "clientSecretSettingName": "AADB2C_PROVIDER_CLIENT_SECRET"
                 },
                 "openIdConnectConfiguration": {
-                  "wellKnownOpenIdConfiguration": "https://alliansistest.onmicrosoft.com.b2clogin.com/alliansistest.onmicrosoft.com.onmicrosoft.com/B2C_1_susi/v2.0/.well-known/openid-configuration"
+                  "wellKnownOpenIdConfiguration": "https://alliansis-test.b2clogin.com/alliansis-test>.onmicrosoft.com/B2C_1_alliansis-test/v2.0/.well-known/openid-configuration"
                 }
               },
               "login": {
