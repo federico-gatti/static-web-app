@@ -1,0 +1,18 @@
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+generator client {
+  provider        = "prisma-client-js"
+  binaryTargets   = ["native", "debian-openssl-1.1.x"]
+}
+
+model Evaluation {
+  id           Int      @id @default(autoincrement())
+  createdAt    DateTime @default(now())
+  clientName   String
+  supplierName String
+  status       String
+}
