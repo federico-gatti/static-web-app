@@ -17,6 +17,9 @@ export const b2cPolicies = {
     editProfile: "B2C_1_alliansis_edit_profile",
   },
   authorities: {
+    custom: {
+      authority: "https://alliansistest.b2clogin.com/alliansistest.onmicrosoft.com/B2C_1_alliansis-test",
+    },
     signUpSignIn: {
       authority: "https://alliansistest.b2clogin.com/alliansistest.onmicrosoft.com/b2c_1_susi_v2",
     },
