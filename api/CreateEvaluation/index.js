@@ -1,4 +1,4 @@
-const { createEvaluation } = require("../services/Evaluation");
+// const { createEvaluation } = require("../services/Evaluation");
 
 const defaultData = {
   data: {
@@ -11,12 +11,14 @@ const defaultData = {
 module.exports = async function (context, req) {
   context.log("JavaScript HTTP trigger function processed a request.");
 
-  const { data } = req.body || defaultData;
+  console.log(req);
+  console.log(context);
+  // const { data } = req.body || defaultData;
 
-  const result = await createEvaluation(data);
+  // const result = await createEvaluation(data);
 
   context.res = {
     // status: 200, /* Defaults to 200 */
-    body: result,
+    body: "result",
   };
 };

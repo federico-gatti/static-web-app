@@ -48,6 +48,17 @@ export const NavigationBar = () => {
         instance.loginRedirect(resetPasswordRequest);
     }
 
+    const handleApi = () => {
+        fetch('/api/createEvaluation')
+    }
+
+    async function getUserInfo() {
+        const response = await fetch('/.auth/me');
+        const payload = await response.json();
+        const { clientPrincipal } = payload;
+        console.log(clientPrincipal);
+      }
+      
     return (
         <>
             <Navbar bg="primary" variant="dark" className="navbarStyle">
@@ -65,6 +76,14 @@ export const NavigationBar = () => {
 
                         <Button variant="info" onClick={handleResetPassword} className="profileButton">
                             Reset Password
+                        </Button>
+
+                        <Button variant="info" onClick={handleApi} className="profileButton">
+                            API
+                        </Button>
+
+                        <Button variant="info" onClick={getUserInfo} className="profileButton">
+                            ME
                         </Button>
 
                         <DropdownButton
