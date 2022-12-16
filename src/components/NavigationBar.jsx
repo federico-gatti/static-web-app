@@ -48,8 +48,9 @@ export const NavigationBar = () => {
         instance.loginRedirect(resetPasswordRequest);
     }
 
-    const handleApi = () => {
-        fetch('/api/createEvaluation')
+    const handleApi = async () => {
+        const res = await fetch('/api/createEvaluation')
+        console.log(await res.json())
     }
 
     async function getUserInfo() {
