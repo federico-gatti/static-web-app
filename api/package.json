@@ -7,10 +7,10 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
-    "@prisma/client": "^4.7.1",
-    "prisma": "^4.7.1"
+    "@prisma/client": "4.7.1"
   },
   "devDependencies": {
-    "azure-functions-core-tools": "^4.x"
+    "azure-functions-core-tools": "^4.x",
+    "prisma": "4.7.1"
   }
 }
