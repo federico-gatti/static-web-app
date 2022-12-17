@@ -16,6 +16,7 @@ export const Home = () => {
     return (
         <>
             <AuthenticatedTemplate>
+                This is {process.env.CUSTOM_ENV_VAR}
                 {activeAccount ? (
                     <Container>
                         <IdTokenData idTokenClaims={activeAccount.idTokenClaims} />
