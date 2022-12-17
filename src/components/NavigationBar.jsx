@@ -7,6 +7,8 @@ export const NavigationBar = () => {
     const { instance, inProgress } = useMsal();
     let activeAccount;
 
+    console.log(process.env)
+
     if (instance) {
         activeAccount = instance.getActiveAccount();
     }
@@ -66,7 +68,7 @@ export const NavigationBar = () => {
                 <a className="navbar-brand" href="/">
                     Microsoft identity platform
                 </a>
-                This is {process.env.CUSTOM_ENV_VAR}
+                This is {process.env.CUSTOM_ENV_VAR} {process.env.REACT_APP_CUSTOM_ENV_VAR}
                 <AuthenticatedTemplate>
                     <Nav.Link className="navbarButton" href="/">
                         Home
