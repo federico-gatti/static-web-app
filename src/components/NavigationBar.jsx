@@ -66,6 +66,7 @@ export const NavigationBar = () => {
                 <a className="navbar-brand" href="/">
                     Microsoft identity platform
                 </a>
+                This is {process.env.CUSTOM_ENV_VAR}
                 <AuthenticatedTemplate>
                     <Nav.Link className="navbarButton" href="/">
                         Home
