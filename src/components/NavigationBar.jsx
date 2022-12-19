@@ -64,7 +64,7 @@ export const NavigationBar = () => {
         <>
             <Navbar bg="primary" variant="dark" className="navbarStyle">
                 <a className="navbar-brand" href="/">
-                    Microsoft identity platform
+                    Microsoft identity platform hello?
                 </a>
                 <AuthenticatedTemplate>
                     <Nav.Link className="navbarButton" href="/">
